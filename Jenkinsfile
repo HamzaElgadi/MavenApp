@@ -6,7 +6,9 @@ pipeline {
         stage("init") {
             steps {
                 script {
-                    gv = load "script.groovy"
+                    echo "init jar"
+                    //gv.buildJar()
+                    //gv = load "script.groovy"
                 }
             }
         }
